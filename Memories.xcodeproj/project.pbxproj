@@ -192,7 +192,6 @@
 				TargetAttributes = {
 					5ACDAF0E1BBC936F00191943 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = SU9Q855NUD;
 					};
 					5ACDAF221BBC936F00191943 = {
 						CreatedOnToolsVersion = 7.0;
@@ -399,9 +398,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Memories/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = wilk.es.Memories;
+				PRODUCT_BUNDLE_IDENTIFIER = memories.Memories;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -410,9 +410,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Memories/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = wilk.es.Memories;
+				PRODUCT_BUNDLE_IDENTIFIER = memories.Memories;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
