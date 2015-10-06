@@ -16,6 +16,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+//        let image = UIImage(named: "baleeted.jpg")
+//        let testFileURL1 = NSURL(fileURLWithPath: NSTemporaryDirectory() + "/temp")
+//        let data = UIImageJPEGRepresentation(image!, 1.0)
+//        data!.writeToURL(testFileURL1, atomically: true)
+//        
+//        S3API.instance.put("baleeted.jpg", data: testFileURL1) { (url, error) -> () in
+//            print(url)
+//            print(error)
+//        }
+        
         return true
     }
 
