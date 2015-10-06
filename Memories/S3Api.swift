@@ -51,6 +51,24 @@ class S3API {
             return task
         }
     }
+    
+    func put(key: String, data: NSURL, completion: (url: String?, error: NSError?) -> ()) {
+        let manager = AWSS3TransferManager.defaultS3TransferManager()
+        
+        let uploadRequest = AWSS3TransferManagerUploadRequest()
+        uploadRequest.bucket = "memories.store"
+        uploadRequest.key = key
+        uploadRequest.body = data
+        
+        manager.upload(uploadRequest).continueWithBlock { (task: AWSTask!) -> AnyObject! in
+            if task.result != nil {
+                completion(url: key, error: nil)
+            } else if task.error != nil {
+                completion(url: nil, error: task.error)
+            }
+            return task
+        }
+    }
 }
 
 
