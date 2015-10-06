@@ -35,7 +35,7 @@ class S3API {
         let manager = AWSS3TransferManager.defaultS3TransferManager()
         
         let downloadingFilePath = NSTemporaryDirectory()
-        let downloadingFileURL = NSURL(fileURLWithPath: downloadingFilePath + "/Archer.png")
+        let downloadingFileURL = NSURL(fileURLWithPath: (downloadingFilePath + "/" + url))
         
         let downloadRequest = AWSS3TransferManagerDownloadRequest()
         downloadRequest.bucket = "memories.store"
