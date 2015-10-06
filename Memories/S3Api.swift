@@ -39,7 +39,7 @@ class S3API {
         
         let downloadRequest = AWSS3TransferManagerDownloadRequest()
         downloadRequest.bucket = "memories.store"
-        downloadRequest.key = "Archer.png"
+        downloadRequest.key = url
         downloadRequest.downloadingFileURL = downloadingFileURL
         
         manager.download(downloadRequest).continueWithBlock { (task: AWSTask!) -> AnyObject! in

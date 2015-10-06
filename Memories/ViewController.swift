@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        S3API.instance.get("test") { (url, error) -> () in
+        S3API.instance.get("Archer.png") { (url, error) -> () in
             if let url = url {
                 self.dummyImageView.setImageWithURL(url)
             }

@@ -17,10 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        S3API.instance.get("test") { (url, error) -> () in
-            print(url)
-            print(error)
-        }
+//        S3API.instance.get("test") { (url, error) -> () in
+//            print(url)
+//            print(error)
+//        }
         
         return true
     }
