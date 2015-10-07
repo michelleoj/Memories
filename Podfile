@@ -6,6 +6,7 @@ pod 'AWSCore'
 pod 'AWSS3'
 pod 'AWSCognito'
 pod 'AFNetworking'
+pod 'Parse'
 end
 
 target 'MemoriesTests' do

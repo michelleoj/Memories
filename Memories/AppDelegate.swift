@@ -6,6 +6,7 @@
 //  Copyright © 2015 Andrew Wilkes. All rights reserved.
 //
 
+import Parse
 import UIKit
 
 @UIApplicationMain
@@ -16,6 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        Parse.setApplicationId("SJpflGfFG8DeXNOzaKsZMpJV4e687glQoTkyLT7t", clientKey: "csIQzqtJ77QjH93M8TD6xAHuA71PiHZ9gNm5p0ZW")
+        
         
 //        let image = UIImage(named: "baleeted.jpg")
 //        let testFileURL1 = NSURL(fileURLWithPath: NSTemporaryDirectory() + "/temp")
