@@ -7,10 +7,14 @@
 //
 
 import UIKit
+import AFNetworking
+import Parse
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var dummyImageView: UIImageView!
+    
+    var currentUser: PFUser!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +25,8 @@ class ViewController: UIViewController {
                 self.dummyImageView.setImageWithURL(url)
             }
         }
+        
+        print("the current user: \(currentUser)")
     }
 
     override func didReceiveMemoryWarning() {

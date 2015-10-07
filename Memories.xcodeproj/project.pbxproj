@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1E12B6E41BC4CF1000DB30FD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E12B6E31BC4CF1000DB30FD /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		5A7D9DAC1BC3610700A9CFD5 /* S3Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D9DAB1BC3610700A9CFD5 /* S3Api.swift */; settings = {ASSET_TAGS = (); }; };
-		5A7D9DAF1BC3619F00A9CFD5 /* dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D9DAE1BC3619F00A9CFD5 /* dummy.m */; settings = {ASSET_TAGS = (); }; };
 		5ACDAF131BBC936F00191943 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACDAF121BBC936F00191943 /* AppDelegate.swift */; };
 		5ACDAF151BBC936F00191943 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACDAF141BBC936F00191943 /* ViewController.swift */; };
 		5ACDAF181BBC936F00191943 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ACDAF161BBC936F00191943 /* Main.storyboard */; };
@@ -43,7 +42,6 @@
 		2BA1BADEB82EDA411C975DBC /* Pods-Memories.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memories.release.xcconfig"; path = "Pods/Target Support Files/Pods-Memories/Pods-Memories.release.xcconfig"; sourceTree = "<group>"; };
 		5A7D9DAB1BC3610700A9CFD5 /* S3Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = S3Api.swift; sourceTree = "<group>"; };
 		5A7D9DAD1BC3619E00A9CFD5 /* Memories-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Memories-Bridging-Header.h"; sourceTree = "<group>"; };
-		5A7D9DAE1BC3619F00A9CFD5 /* dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dummy.m; sourceTree = "<group>"; };
 		5ACDAF0F1BBC936F00191943 /* Memories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ACDAF121BBC936F00191943 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5ACDAF141BBC936F00191943 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -130,7 +128,6 @@
 				5AFBC53C1BC36E1D005555F0 /* baleeted.jpg */,
 				5ACDAF1B1BBC936F00191943 /* LaunchScreen.storyboard */,
 				5ACDAF1E1BBC936F00191943 /* Info.plist */,
-				5A7D9DAE1BC3619F00A9CFD5 /* dummy.m */,
 				5A7D9DAD1BC3619E00A9CFD5 /* Memories-Bridging-Header.h */,
 			);
 			path = Memories;
@@ -358,7 +355,6 @@
 			files = (
 				5A7D9DAC1BC3610700A9CFD5 /* S3Api.swift in Sources */,
 				5ACDAF151BBC936F00191943 /* ViewController.swift in Sources */,
-				5A7D9DAF1BC3619F00A9CFD5 /* dummy.m in Sources */,
 				1E12B6E41BC4CF1000DB30FD /* LoginViewController.swift in Sources */,
 				5ACDAF131BBC936F00191943 /* AppDelegate.swift in Sources */,
 			);
@@ -435,6 +431,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -479,6 +476,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -539,6 +537,7 @@
 		};
 		5ACDAF3B1BBC936F00191943 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D37114364AADAF0DFBEEA993 /* Pods-Memories.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MemoriesTests/Info.plist;
