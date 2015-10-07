@@ -18,7 +18,7 @@
 		5ACDAF281BBC936F00191943 /* MemoriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACDAF271BBC936F00191943 /* MemoriesTests.swift */; };
 		5ACDAF331BBC936F00191943 /* MemoriesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACDAF321BBC936F00191943 /* MemoriesUITests.swift */; };
 		5AFBC53D1BC36E1D005555F0 /* baleeted.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5AFBC53C1BC36E1D005555F0 /* baleeted.jpg */; settings = {ASSET_TAGS = (); }; };
-		8983F3165B9639D2ED076539 /* libPods-Memories.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F65DBD504C3AC2C535C968 /* libPods-Memories.a */; };
+		7B82F2724A624D0053922338 /* Pods_Memories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ACB3263393D084C6CE95392 /* Pods_Memories.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +58,7 @@
 		5ACDAF321BBC936F00191943 /* MemoriesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoriesUITests.swift; sourceTree = "<group>"; };
 		5ACDAF341BBC936F00191943 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AFBC53C1BC36E1D005555F0 /* baleeted.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = baleeted.jpg; sourceTree = "<group>"; };
-		99F65DBD504C3AC2C535C968 /* libPods-Memories.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Memories.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ACB3263393D084C6CE95392 /* Pods_Memories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Memories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D37114364AADAF0DFBEEA993 /* Pods-Memories.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memories.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Memories/Pods-Memories.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8983F3165B9639D2ED076539 /* libPods-Memories.a in Frameworks */,
+				7B82F2724A624D0053922338 /* Pods_Memories.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,7 +166,7 @@
 		FB0D33DA6EE9F240C584E83A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				99F65DBD504C3AC2C535C968 /* libPods-Memories.a */,
+				6ACB3263393D084C6CE95392 /* Pods_Memories.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -183,6 +183,7 @@
 				5ACDAF0C1BBC936F00191943 /* Frameworks */,
 				5ACDAF0D1BBC936F00191943 /* Resources */,
 				7C87DF8C8CBD0928F296C97D /* Copy Pods Resources */,
+				1E2115F0AC85B156B03F262E /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -303,6 +304,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1E2115F0AC85B156B03F262E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Memories/Pods-Memories-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5ACF018F69AAABF83748BE49 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -487,6 +503,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = Memories/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -504,6 +524,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = Memories/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
