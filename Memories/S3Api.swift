@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import AWSS3
 
 //AWSCognitoCredentialsProvider *credentialsProvider = [[AWSCognitoCredentialsProvider alloc]
 //    initWithRegionType:AWSRegionUSEast1

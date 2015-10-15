@@ -17,6 +17,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var signUpButton: UIButton!
     
+    var currentUser: PFUser!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -45,12 +47,15 @@ class LoginViewController: UIViewController {
             if user != nil {
                 // Do stuff after successful login.
                 print("yay you're logged in")
+                self.currentUser = PFUser.currentUser()
+                
                 self.performSegueWithIdentifier("successfulLoginSegue", sender: self)
             } else {
                 // The login failed. Check error to see why.
                 print("couldn't log in")
             }
         }
+        
     }
     
     func signUp() {
@@ -75,14 +80,15 @@ class LoginViewController: UIViewController {
         }
     }
     
-    /*
-    // MARK: - Navigation
     
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
+    
+    //In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        let destinationViewController = segue.destinationViewController as! ViewController
+        destinationViewController.currentUser = self.currentUser
+            
     }
-    */
+
+    
     
 }
