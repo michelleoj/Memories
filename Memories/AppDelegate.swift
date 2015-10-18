@@ -13,12 +13,19 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var storyboard = UIStoryboard(name: "Main", bundle: nil)
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
         Parse.setApplicationId("SJpflGfFG8DeXNOzaKsZMpJV4e687glQoTkyLT7t", clientKey: "csIQzqtJ77QjH93M8TD6xAHuA71PiHZ9gNm5p0ZW")
+        
+        if ((PFUser.currentUser()) != nil) {
+            let vc = storyboard.instantiateViewControllerWithIdentifier("MenuViewController")
+            window?.rootViewController = vc
+        }
+        
         
         
 //        let image = UIImage(named: "baleeted.jpg")
@@ -33,6 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
+    
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

@@ -84,7 +84,8 @@ class LoginViewController: UIViewController {
     
     //In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-        let destinationViewController = segue.destinationViewController as! ViewController
+        
+        let destinationViewController = segue.destinationViewController as! MenuViewController
         destinationViewController.currentUser = self.currentUser
             
     }
