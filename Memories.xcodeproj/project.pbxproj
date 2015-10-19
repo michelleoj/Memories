@@ -22,6 +22,7 @@
 		714984D01BD41A3400F2EC4D /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 714984CE1BD41A3400F2EC4D /* HomeViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		714984D31BD41A9A00F2EC4D /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714984D11BD41A9A00F2EC4D /* CameraViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		714984D41BD41A9A00F2EC4D /* CameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 714984D21BD41A9A00F2EC4D /* CameraViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		714984DA1BD49F3000F2EC4D /* HamburgerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714984D91BD49F3000F2EC4D /* HamburgerViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		7B82F2724A624D0053922338 /* Pods_Memories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ACB3263393D084C6CE95392 /* Pods_Memories.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		714984CE1BD41A3400F2EC4D /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		714984D11BD41A9A00F2EC4D /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		714984D21BD41A9A00F2EC4D /* CameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraViewController.xib; sourceTree = "<group>"; };
+		714984D91BD49F3000F2EC4D /* HamburgerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HamburgerViewController.swift; sourceTree = "<group>"; };
 		D37114364AADAF0DFBEEA993 /* Pods-Memories.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memories.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Memories/Pods-Memories.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,6 +136,7 @@
 				5A7D9DAA1BC360F200A9CFD5 /* S3 API */,
 				5ACDAF121BBC936F00191943 /* AppDelegate.swift */,
 				5ACDAF161BBC936F00191943 /* Main.storyboard */,
+				714984D91BD49F3000F2EC4D /* HamburgerViewController.swift */,
 				5ACDAF191BBC936F00191943 /* Assets.xcassets */,
 				5AFBC53C1BC36E1D005555F0 /* baleeted.jpg */,
 				5ACDAF1B1BBC936F00191943 /* LaunchScreen.storyboard */,
@@ -391,6 +394,7 @@
 				5ACDAF151BBC936F00191943 /* ViewController.swift in Sources */,
 				1E12B6E41BC4CF1000DB30FD /* LoginViewController.swift in Sources */,
 				714984C41BD40FD900F2EC4D /* MenuViewController.swift in Sources */,
+				714984DA1BD49F3000F2EC4D /* HamburgerViewController.swift in Sources */,
 				714984D31BD41A9A00F2EC4D /* CameraViewController.swift in Sources */,
 				5ACDAF131BBC936F00191943 /* AppDelegate.swift in Sources */,
 				714984CF1BD41A3400F2EC4D /* HomeViewController.swift in Sources */,
